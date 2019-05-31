@@ -153,15 +153,15 @@ function draw() {
 	fill(255);
 	textSize(28);
 	textAlign(LEFT, TOP);
-	text(`Lives ${playerLives}\nStreak ${round(streak*10)/10}`, 0, 0);
+	text(`VIDAS ${playerLives}\nCOMBO ${round(streak*10)/10}`, 0, 0);
 	textAlign(RIGHT, TOP);
 	fill(win ? 0 : 255, 255, win ? 0 : 255)
-	text(`${score}\nHi ${hs()}`, width, 0);
+	text(`${score}\nMaxP ${hs()}`, width, 0);
 
 	if (playerLives < 0) {
 		textAlign(CENTER, CENTER);
 		textSize(64);
-		text("GAME OVER", width / 2, height / 2);
+		text("SE FODEU", width / 2, height / 2);
 	}
 
 	if (win) {
@@ -177,7 +177,7 @@ function draw() {
 
 		textAlign(CENTER, CENTER);
 		textSize(64);
-		text("YOU WIN", width / 2, height / 2);
+		text("VENCEU", width / 2, height / 2);
 
 		noLoop();
 	}
